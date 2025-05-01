@@ -62,10 +62,7 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_GHPOC15ICID }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_GHPOC15ICID }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_GHPOC15ICID }}
-
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
       - name: Deploy to Azure Functions (manual zip)
         uses: Azure/functions-action@v1
         with:
