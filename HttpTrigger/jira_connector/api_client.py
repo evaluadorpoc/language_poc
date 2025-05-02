@@ -1,8 +1,8 @@
 # jira_connector/api_client.py
 import requests
 import json
-from shared.logger_config import logger
-from shared.settings import JIRA_BASE_URL, JIRA_TOKEN, JIRA_EMAIL
+from HttpTrigger.shared.logger_config import logger
+from HttpTrigger.shared.settings import JIRA_BASE_URL, JIRA_TOKEN, JIRA_EMAIL
 
 class JiraClient:
     def __init__(self):

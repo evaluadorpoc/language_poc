@@ -1,8 +1,8 @@
 # orchestrator/processor.py
 
-from jira_connector.api_client import JiraClient
-from shared.logger_config import logger
-import shared.settings as settings
+from HttpTrigger.jira_connector.api_client import JiraClient
+from HttpTrigger.shared.logger_config import logger
+import HttpTrigger.shared.settings as settings
 
 
 def process_jira_operations(issue_key, description, custom_fields=None, raw_fields=None):

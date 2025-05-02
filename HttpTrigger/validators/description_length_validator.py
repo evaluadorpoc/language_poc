@@ -1,4 +1,4 @@
-from shared.logger_config import logger
+from HttpTrigger.shared.logger_config import logger
 
 def validate_description_length(issue_data: dict) -> dict:
     """
