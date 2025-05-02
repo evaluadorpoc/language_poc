@@ -1,4 +1,4 @@
-from HttpTrigger.httr_shared.logger_config import logger
+from httr_shared.logger_config import logger
 
 def validate_description_format(issue_data: dict) -> dict:
     """

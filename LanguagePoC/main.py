@@ -1,6 +1,6 @@
 import azure.functions as func
 import json
-from LanguagePoC.lpoc_orchestrator.procesar_hu import procesar_hu
+from lpoc_orchestrator.procesar_hu import procesar_hu
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
     try:
