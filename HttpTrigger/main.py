@@ -1,9 +1,9 @@
 # HttpTrigger/main.py
 
 import azure.functions as func
-from HttpTrigger.shared.logger_config import logger
-from HttpTrigger.orchestrator.processor import process_jira_operations
-from HttpTrigger.shared.jira_change_utils import field_was_changed
+from HttpTrigger.httr_shared.logger_config import logger
+from HttpTrigger.httr_orchestrator.processor import process_jira_operations
+from HttpTrigger.httr_shared.jira_change_utils import field_was_changed
 
 def process_request(req: func.HttpRequest) -> func.HttpResponse:
     logger.info("✅ Nueva solicitud HTTP recibida.")

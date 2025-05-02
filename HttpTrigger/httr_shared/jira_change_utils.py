@@ -1,6 +1,6 @@
 # shared/jira_change_utils.py
 
-from HttpTrigger.shared.logger_config import logger
+from HttpTrigger.httr_shared.logger_config import logger
 
 def extract_changed_fields(changelog):
     if not changelog or "items" not in changelog:

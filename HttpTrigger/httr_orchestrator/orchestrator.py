@@ -1,5 +1,5 @@
-from validators.description_format_validator import validate_description_format
-from validators.description_length_validator import validate_description_length
+from httr_validators.description_format_validator import validate_description_format
+from httr_validators.description_length_validator import validate_description_length
 
 def orchestrate_validations(issue_data: dict) -> dict:
     """

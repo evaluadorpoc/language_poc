@@ -1,5 +1,5 @@
-from validators.evaluador_completo import evaluar_clasico, evaluar_intencion_proposito
-from jira_connector.enviar_comentario import comentar_en_issue
+from lpoc_validators.evaluador_completo import evaluar_clasico, evaluar_intencion_proposito
+from lpoc_jira_connector.enviar_comentario import comentar_en_issue
 
 def procesar_hu(hu: str, issue_key: str = None) -> dict:
     resultado_clasico = evaluar_clasico(hu)
